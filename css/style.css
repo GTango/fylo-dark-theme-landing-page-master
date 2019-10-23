@@ -18,6 +18,18 @@ a {
   color: #ffffff;
 }
 
+a,
+p {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 999px) {
+  a,
+  p {
+    font-size: 1rem;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -29,12 +41,14 @@ h3 {
 }
 
 p {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1.5em;
 }
 
 section {
   padding: 0 27px 160px;
+  background: #171e2a;
 }
 
 button {
@@ -99,6 +113,7 @@ header a:hover {
 }
 
 .hero {
+  position: relative;
   background-color: #1b2330;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +126,32 @@ header a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  bottom: 0px;
+  background: url("/images/bg-curvy-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media screen and (min-width: 699px) {
+  .hero:after {
+    background: url("/images/bg-curvy-desktop.svg");
+    height: 33vw;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero img {
@@ -127,10 +168,118 @@ header a:hover {
 
 .hero p {
   max-width: 568px;
-  font-size: 0.86em;
+  font-size: 0.7em;
 }
 
 .hero button {
   margin-top: 8px;
+}
+
+.features .feature-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 7vw 10vw;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 699px) {
+  .features .feature-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .features .feature-grid {
+    gap: 6vw 7vw;
+  }
+}
+
+.features .feature {
+  text-align: center;
+}
+
+.features .feature img {
+  height: 100%;
+  width: auto;
+}
+
+.features .feature-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  margin-bottom: 40px;
+}
+
+.features .feature-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+.features .feature-description {
+  font-size: 1rem;
+}
+
+.productive-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 999px) {
+  .productive-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    max-width: 1320px;
+  }
+}
+
+.productive-image {
+  text-align: center;
+}
+
+.productive-image img {
+  width: 100%;
+  max-width: 615px;
+}
+
+@media screen and (min-width: 999px) {
+  .productive-text h2 {
+    max-width: 400px;
+  }
+}
+
+.productive-text a {
+  background-image: url("/images/icon-arrow.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+  color: #64e1d9;
+  border-bottom: 1px solid #64e1d9;
+  -webkit-transition: all 200ms case-in-out;
+  transition: all 200ms case-in-out;
+}
+
+.productive-text a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
