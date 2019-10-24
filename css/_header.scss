@@ -1,10 +1,12 @@
 header {
-  display: grid;
-  grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
-  grid-gap: 56px;
-  align-items: center;
   background-color: $introBg;
-  padding: 25px 20px 50px 20px;
+
+  .container {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
+    grid-gap: 56px;
+    align-items: center;
+  }
 
   @include breakpoint(large) {
     grid-gap: 20px;

@@ -39,8 +39,8 @@ p {
   margin-top: 0;
   margin-bottom: 1.5em;
 }
+
 section {
-  padding: 0 27px 160px;
   background: $mainBg;
 }
 
@@ -56,5 +56,16 @@ button {
 
   &:hover {
     background: linear-gradient(to right, $ctaBlue, $ctaCyan);
+  }
+
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 20px 100px 20px;
+
+  @include breakpoint(large) {
+    padding: 73px 60px 87px 60px;
   }
 }

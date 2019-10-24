@@ -2,14 +2,18 @@
   .feature-grid {
     display: grid;
     gap: 7vw 10vw;
-    max-width: 880px;
+    max-width: 920px;
     margin: 0 auto;
+    padding-left: 20;
+    padding-right: 20;
 
     @include breakpoint(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
     @include breakpoint(large) {
       gap: 6vw 7vw;
+      padding-left: 60;
+      padding-right: 60;
     }
   }
   .feature {
