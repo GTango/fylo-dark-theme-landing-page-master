@@ -306,6 +306,7 @@ header a:hover {
 .quotes-grid {
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 25px;

@@ -1,6 +1,7 @@
 .quotes {
   &-grid {
     display: grid;
+    position: relative;
     grid-template-columns: 1fr;
     gap: 25px;
     max-width: 500px;
