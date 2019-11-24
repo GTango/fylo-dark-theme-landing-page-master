@@ -1,4 +1,5 @@
 .quotes {
+  padding-bottom: 200px;
   &-grid {
     display: grid;
     position: relative;
@@ -36,26 +37,25 @@
     position: relative;
     z-index: 1;
     background: $testimonialBg;
-    padding: 44px 24px 24px 24px;
+    padding: 30px 24px 24px 24px;
     border-radius: 5px;
 
     @include breakpoint(large) {
-      padding: 30px 24px 24px 24px;
+      padding: 40px 24px 24px 24px;
     }
 
     &-text {
-      font-size: 0.75em;
+      font-size: 0.65em;
       margin-bottom: 30px;
     }
 
     &-author {
       display: grid;
-      grid-template-columns: 20px 1fr;
+      grid-template-columns: 40px 1fr;
       grid-template-rows: 20px 20px;
       column-gap: 15px;
 
       &-image {
-        width: 20px;
         grid-column: 1 / span 1;
         grid-row: 1 / span 2;
 

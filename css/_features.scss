@@ -1,14 +1,15 @@
 .features {
   .feature-grid {
     display: grid;
-    gap: 7vw 10vw;
+    grid-template-columns: 1fr;
+    gap: 6vw 10vw;
     margin: 0 auto;
 
     @include breakpoint(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
     @include breakpoint(large) {
-      gap: 6vw 7vw;
+      gap: 7vw 7vw;
     }
   }
   .feature {
@@ -24,7 +25,7 @@
       justify-content: center;
       align-items: center;
       height: 90px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     &-title {

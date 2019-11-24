@@ -4,24 +4,25 @@ header {
   .container {
     display: grid;
     grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
-    grid-gap: 56px;
+    grid-gap: 20px;
     align-items: center;
   }
 
   @include breakpoint(large) {
-    grid-gap: 20px;
-    padding: 73px 80px;
+    grid-gap: 56px;
   }
 
   img {
     width: 83px;
+
     @include breakpoint(large) {
-      width: 185;
+      width: 185px;
     }
   }
 
   a {
     font-size: 0.875rem;
+
     @include breakpoint(large) {
       font-size: 1rem;
     }

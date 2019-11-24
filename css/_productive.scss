@@ -34,8 +34,8 @@
       background-repeat: no-repeat;
       padding-right: 25px;
       color: #64e1d9;
-      border-bottom: 1px solid #64e1d9;
-      transition: all 200ms case-in-out;
+      border-bottom: 1px soli $ctaCyan;
+      transition: all 200ms ease-in-out;
 
       &:hover {
         color: #ffffff;

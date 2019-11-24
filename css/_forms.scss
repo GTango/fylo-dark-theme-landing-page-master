@@ -19,7 +19,7 @@ button,
 
   &-large {
     @extend .button;
-    padding: 20px 40px;
+    padding: 20px;
 
     @include breakpoint(medium) {
       max-width: 285px;

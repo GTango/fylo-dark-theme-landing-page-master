@@ -1,4 +1,9 @@
 .signup {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  transform: translateY(-248px);
+
   &-block {
     //border: 1px solid red;
     border-radius: $border-radius;
