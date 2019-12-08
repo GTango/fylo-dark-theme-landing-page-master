@@ -6,7 +6,7 @@ html {
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -62,14 +62,16 @@ section {
   background: #171e2a;
 }
 
-.container, .container-small {
+.container,
+.container-small {
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px 20px 100px 20px;
 }
 
 @media screen and (min-width: 999px) {
-  .container, .container-small {
+  .container,
+  .container-small {
     padding: 73px 60px 87px 60px;
   }
 }
@@ -83,7 +85,13 @@ button,
 button-large,
 .button-large {
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#64e1d9), to(#329ecc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#64e1d9),
+    to(#329ecc)
+  );
   background: linear-gradient(to right, #64e1d9, #329ecc);
   font-size: 0.875rem;
   padding: 15px 20px;
@@ -107,7 +115,13 @@ button:hover,
 .button:hover,
 button-large:hover,
 .button-large:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#329ecc), to(#64e1d9));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#329ecc),
+    to(#64e1d9)
+  );
   background: linear-gradient(to right, #329ecc, #64e1d9);
 }
 
@@ -141,15 +155,16 @@ header {
   background-color: #1b2330;
 }
 
-header .container, header .container-small {
+header .container,
+header .container-small {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(100px, 1fr) (auto)[3];
-      grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
+  -ms-grid-columns: minmax(100px, 1fr) (auto) [3];
+  grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
   grid-gap: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 999px) {
@@ -201,22 +216,23 @@ header a:hover {
 
 @media screen and (min-width: 699px) {
   .hero:after {
-    background: url("/images/bg-curvy-desktop.svg");
+    background: url("../images/bg-curvy-desktop.svg");
     height: 33vw;
   }
 }
 
-.hero .container, .hero .container-small {
+.hero .container,
+.hero .container-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -250,15 +266,15 @@ header a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 6vw 10vw;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 699px) {
   .features .feature-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -282,11 +298,11 @@ header a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 90px;
   margin-bottom: 30px;
 }
@@ -307,10 +323,10 @@ header a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 50px;
   max-width: 600px;
   margin: 0 auto;
@@ -318,8 +334,8 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .productive-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
     max-width: 1320px;
   }
 }
@@ -340,7 +356,7 @@ header a:hover {
 }
 
 .productive-text a {
-  background-image: url("/images/icon-arrow.svg");
+  background-image: url("../images/icon-arrow.svg");
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 25px;
@@ -364,24 +380,24 @@ header a:hover {
   display: grid;
   position: relative;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 25px;
   max-width: 500px;
 }
 
 @media screen and (min-width: 999px) {
   .quotes-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: 1320px;
   }
 }
 
 .quotes-grid:first-child:before {
-  content: url("/images/bg-quotes.png");
+  content: url("../images/bg-quotes.png");
   -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
   position: absolute;
   z-index: 0;
   top: -20px;
@@ -393,7 +409,7 @@ header a:hover {
 @media screen and (min-width: 999px) {
   .quotes-grid:first-child:before {
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     top: 37px;
     left: 50px;
     width: 60px;
@@ -424,11 +440,11 @@ header a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
-      grid-template-columns: 40px 1fr;
+  grid-template-columns: 40px 1fr;
   -ms-grid-rows: 20px 20px;
-      grid-template-rows: 20px 20px;
+  grid-template-rows: 20px 20px;
   -webkit-column-gap: 15px;
-          column-gap: 15px;
+  column-gap: 15px;
 }
 
 .quotes .quote-author-image {
@@ -460,13 +476,13 @@ header a:hover {
   background: transparent;
   width: 100%;
   -webkit-transform: translateY(-248px);
-          transform: translateY(-248px);
+  transform: translateY(-248px);
 }
 
 .signup-block {
   border-radius: 10px;
   -webkit-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
   background: #1b2330;
   padding: 45px 30px 45px 30px;
   text-align: center;
@@ -488,7 +504,7 @@ header a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 25px;
   margin-top: 35px;
 }
@@ -496,7 +512,7 @@ header a:hover {
 @media screen and (min-width: 699px) {
   .signup-form {
     -ms-grid-columns: 1fr 200px;
-        grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 200px;
     gap: 30px;
     margin-top: 40px;
   }
@@ -512,35 +528,41 @@ header a:hover {
   text-decoration: underline;
 }
 
-.footer .container, .footer .container-small {
+.footer .container,
+.footer .container-small {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 35px;
   grid-column-gap: 0px;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "logo" "address" "contact" "links1" "links2" "social";
+  grid-template-columns: 1fr;
+  grid-template-areas: "logo" "address" "contact" "links1" "links2" "social";
 }
 
 @media screen and (min-width: 699px) {
-  .footer .container, .footer .container-small {
+  .footer .container,
+  .footer .container-small {
     grid-column-gap: 25px;
   }
 }
 
 @media screen and (min-width: 999px) {
-  .footer .container, .footer .container-small {
+  .footer .container,
+  .footer .container-small {
     grid-column-gap: 35px;
     -ms-grid-columns: 3fr 2fr 2fr 2fr auto;
-        grid-template-columns: 3fr 2fr 2fr 2fr auto;
+    grid-template-columns: 3fr 2fr 2fr 2fr auto;
     -ms-grid-rows: 60px 1fr;
-        grid-template-rows: 60px 1fr;
-        grid-template-areas: "logo logo logo logo logo" "address contact links1 links2 social";
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "logo logo logo logo logo"
+      "address contact links1 links2 social";
   }
 }
 
 @media screen and (min-width: 1399px) {
-  .footer .container, .footer .container-small {
+  .footer .container,
+  .footer .container-small {
     grid-column-gap: 60px;
   }
 }
@@ -564,8 +586,8 @@ header a:hover {
 
 .footer-address svg {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 13px;
-          flex: 0 0 13px;
+  -ms-flex: 0 0 13px;
+  flex: 0 0 13px;
   margin-top: 3px;
   margin-right: 20px;
 }
@@ -579,7 +601,7 @@ header a:hover {
 @media screen and (min-width: 999px) {
   .footer-contact {
     -ms-grid-column-align: right;
-        justify-self: right;
+    justify-self: right;
   }
 }
 
@@ -587,7 +609,8 @@ header a:hover {
   font-size: 0.875rem;
 }
 
-.footer-contact-phone, .footer-contact-email {
+.footer-contact-phone,
+.footer-contact-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +630,8 @@ header a:hover {
   margin-right: 20px;
 }
 
-.footer-links1 a, .footer-links2 a {
+.footer-links1 a,
+.footer-links2 a {
   display: block;
   margin-bottom: 20px;
 }
@@ -621,7 +645,7 @@ header a:hover {
 @media screen and (min-width: 999px) {
   .footer-links1 {
     -ms-grid-column-align: right;
-        justify-self: right;
+    justify-self: right;
   }
 }
 
@@ -636,13 +660,13 @@ header a:hover {
   -ms-grid-column: 1;
   grid-area: social;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 @media screen and (min-width: 699px) {
   .footer-social {
     -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
   }
 }
 
