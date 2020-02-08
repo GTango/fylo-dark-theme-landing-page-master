@@ -567,15 +567,15 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .footer-logo {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    grid-row: 1;
+    grid-column: 1;
     grid-area: logo;
   }
 }
 
 .footer-address {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: address;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,8 +591,8 @@ header a:hover {
 }
 
 .footer-contact {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
   grid-area: contact;
 }
 
@@ -635,8 +635,8 @@ header a:hover {
 }
 
 .footer-links1 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: links1;
 }
 
@@ -648,14 +648,14 @@ header a:hover {
 }
 
 .footer-links2 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
+  grid-row: 5;
+  grid-column: 1;
   grid-area: links2;
 }
 
 .footer-social {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
+  grid-row: 6;
+  grid-column: 1;
   grid-area: social;
   -ms-grid-column-align: center;
   justify-self: center;
